@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% block content %}
+
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1 indexfont">ㅋㅋㅋㅋㅋㅋ<br>야 넌 글자도 못 세냐?<br>ㅋㅋㅋㅋㅋㅋ</h1>
+      <h3 class="mb-5 eng">
+        <em>How Lazy You Are!~</em>
+      </h3>
+      <form action="{% url 'result'%}">
+        <textarea class="resultfont" name="fulltext" id="" cols="50" rows="10" placeholder="여기다 세고 싶은 문장 넣으라고ㅋㅌㅋㅌㅋㅋ"></textarea>
+        <br>
+        <input class="btn btn-danger btn-xl js-scroll-trigger resultfont" type="submit" value="응 세줘!">
+    </form>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+{% endblock %}
